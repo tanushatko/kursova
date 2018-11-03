@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     	<meta charset="utf-8">
+        <title>MyPhotoWorld</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="GridLoadingEffects/css/component.css" />
+        <script src="GridLoadingEffects/js/modernizr.custom.js"></script>
+   </head>
+   <body>
+   		<header id="header" class="header">
+   			<div class="header__menu">
+   				<a href="#header" class="header__logo">Andrey Guchok</a>
+   				<nav class="header__nav">
+   					<a class="nav__item" href="#home">HOME</a>
+   					<a class="nav__item" href="#about">ABOUT</a>
+   					<a class="nav__item" href="#pricing">PRICING</a>
+   					<a class="nav__item" href="#gallery">GALLERY</a>
+   					<a class="nav__item" href="#blog">BLOG</a>
+   					<a class="nav__item" href="#contact">CONTACT</a>
+   				</nav>
+   			</div>
+   			<div class="header__content">
+   				<h1 class="content__title">ANDREY GUCHOK</h1>
+   				<h2 class="content__title content__title--2">Photographer</h2>
+   				<p class="content__aim">I'll make your wish come true.</p>
+   			</div>
+   		</header>
+      <main>
+        <section class="about" id="about">
+          <div class="wrapper">
+            <h3 class="about__title">My Latest Works</h3>
+            <ul class="grid effect-4" id="grid">
+                    <li><img src="img/sea.jpg"></li>
+                    <li><a href=""><img src="img/vidbyt.jpg"></a></li>
+                    <li><a href=""><img src="img/autumn.jpg"></a></li>
+                    <li><a href=""><img src="img/winter.jpg"></a></li>
+                    <li><a href=""><img src="img/sea.jpg"></a></li>
+                    <li><a href=""><img src="img/vidbyt.jpg"></a></li>
+                    <li><a href=""><img src="img/autumn.jpg"></a></li>
+                    <li><a href=""><img src="img/winter.jpg"></a></li>
+                    <li><a href=""><img src="img/sea.jpg"></a></li>
+                    <li><a href=""><img src="img/vidbyt.jpg"></a></li>
+                    <li><a href=""><img src="img/autumn.jpg"></a></li>
+                    <li><a href=""><img src="img/winter.jpg"></a></li>
+                    <li><a href=""><img src="img/sea.jpg"></a></li>
+                    <li><a href=""><img src="img/vidbyt.jpg"></a></li>
+                    <li><a href=""><img src="img/autumn.jpg"></a></li>
+                    <li><a href=""><img src="img/winter.jpg"></a></li>
+                  </ul>
+          </div>
+        </section>
+      </main>
+      <script src="GridLoadingEffects/js/masonry.pkgd.min.js"></script>
+      <script src="GridLoadingEffects/js/imagesloaded.js"></script>
+      <script src="GridLoadingEffects/js/classie.js"></script>
+      <script src="GridLoadingEffects/js/AnimOnScroll.js"></script>
+      <script>
+        new AnimOnScroll( document.getElementById( 'grid' ), {
+          minDuration : 0.4,
+          maxDuration : 0.7,
+          viewportFactor : 0.2
+        } );
+      </script>
+
+   </body>
+
+</html>
